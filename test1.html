@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Visualising Good Neta</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:20px; padding:0; }
+        #map { position:absolute; top:120px; bottom:0; width:70%; }
+    </style>
+</head>
+<body>
+<h1>Good Neta</h1>
+<p> Data Visualisation on ideal politicians</p>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibmVoYWFyc2lkMSIsImEiOiJjaWoyZnZza2kwMDBodHBrbjlqbDR6aGZlIn0.WxW2orybuhZ2Zoa2BgwO7g';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/nehaarsid1/cij2xg2ax0025aokq8jyx5gln', //hosted style id
+   // center: [-77.38, 39], // starting position
+   // zoom: 3 // starting zoom
+});
+</script>
+
+</body>
+</html>
